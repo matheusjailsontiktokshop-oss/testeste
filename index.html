@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marketplace de Agências</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">AgencyHub</div>
+        <div class="nav-actions">
+          <button class="ghost">Entrar</button>
+          <button class="primary">Anunciar agência</button>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Marketplace de agências</p>
+          <h1>Encontre a agência ideal para o seu próximo projeto.</h1>
+          <p class="subtitle">
+            Compare especialistas em estratégia, performance, branding e tecnologia com
+            avaliações reais e disponibilidade imediata.
+          </p>
+        </div>
+        <div class="hero-card">
+          <h2>Busca rápida</h2>
+          <p>Filtre por especialidade, faixa de investimento e localização.</p>
+          <div class="hero-stats">
+            <div>
+              <strong>320+</strong>
+              <span>Agências verificadas</span>
+            </div>
+            <div>
+              <strong>R$ 12M</strong>
+              <span>Em projetos lançados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls">
+        <div class="search">
+          <label for="search">Buscar</label>
+          <input id="search" type="text" placeholder="Digite um nome ou especialidade" />
+        </div>
+        <div class="select">
+          <label for="segment">Segmento</label>
+          <select id="segment">
+            <option value="">Todos</option>
+            <option value="Branding">Branding</option>
+            <option value="Performance">Performance</option>
+            <option value="Produto Digital">Produto Digital</option>
+            <option value="Conteúdo">Conteúdo</option>
+          </select>
+        </div>
+        <div class="select">
+          <label for="budget">Investimento</label>
+          <select id="budget">
+            <option value="">Qualquer faixa</option>
+            <option value="até 20k">Até R$ 20k</option>
+            <option value="20k-50k">R$ 20k - 50k</option>
+            <option value="50k+">R$ 50k+</option>
+          </select>
+        </div>
+        <button id="clear" class="ghost">Limpar filtros</button>
+      </section>
+
+      <section class="featured">
+        <div>
+          <h2>Agências em destaque</h2>
+          <p>Seleção baseada em performance, reviews e compatibilidade com o seu perfil.</p>
+        </div>
+        <button class="primary">Ver todas</button>
+      </section>
+
+      <p id="results" class="results"></p>
+
+      <section id="cards" class="cards"></section>
+
+      <section class="cta">
+        <div>
+          <h2>Tem uma agência?</h2>
+          <p>Crie sua vitrine, receba leads qualificados e acompanhe métricas em tempo real.</p>
+        </div>
+        <button class="primary">Começar agora</button>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>AgencyHub</strong>
+        <p>Marketplace que conecta marcas e agências premiadas.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Sobre</a>
+        <a href="#">Como funciona</a>
+        <a href="#">Planos</a>
+        <a href="#">Suporte</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
